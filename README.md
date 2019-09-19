@@ -11,7 +11,7 @@
 		<h4><font color="darkgoldenrod">地狱空荡荡</font></h4>
 		<h5>地狱空荡荡</h5>
 		<h6>地狱空荡荡</h6>
-		<hr color="darkorange>
+		<hr color="darkorange">
 		<p align="center">地狱空荡荡</p><br/>
 		<del><font color="red">地狱空荡荡</font></del><br/>
 		<font color="darkcyan" size="7" face="楷体" >地狱空荡荡</font><br/>

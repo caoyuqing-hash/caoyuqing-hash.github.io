@@ -46,7 +46,7 @@ ul {
 </div>
 <ul>
 <li><a href="http://baidu.com/" target="_blank">B</a></li>
-<li><a href="https://github.com/caoyuqing-hash/caoyuqing-hash.github.io/blob/master/cyq/index.html" target="_blank">A</a></li>
+<li><a href="https://caoyuqing-hash.github.io/cyq/" target="_blank">A</a></li>
 <li><a href="m.html#b" target="_blank">L</a></li>
 <li><a href="b.html" target="_blank">D</a></li>
 </ul>

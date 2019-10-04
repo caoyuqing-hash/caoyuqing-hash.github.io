@@ -1,4 +1,5 @@
 
+
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -6,7 +7,7 @@
 	</head>
 	
 		<style type="text/css">
-body {background-image:url(img/1567779010041.jpeg);}
+body {background-image:url(caoyuqing-hash.github.io/cyq/img/1567779010041.jpeg);}
 #head{color: crimson;text-align: center; font-family: elephant;}
 ul {
     list-style-type: none;

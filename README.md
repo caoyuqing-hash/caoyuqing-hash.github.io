@@ -45,10 +45,10 @@ ul {
 	<h1>SELF INTRODUCTION</h1>
 </div>
 <ul>
-<li><a href="https://caoyuqing-hash.github.io/cyq/1.html" target="_blank">第一次作业</a></li>
-<li><a href="https://caoyuqing-hash.github.io/cyq/2.html" target="_blank">第二次作业</a></li>
-<li><a href="m.html#b" target="_blank">L</a></li>
-<li><a href="b.html" target="_blank">D</a></li>
+<li><a href="https://caoyuqing-hash.github.io/cyq/1" target="_blank">第一次作业</a></li>
+<li><a href="https://caoyuqing-hash.github.io/cyq/2" target="_blank">第二次作业</a></li>
+<li><a href="m.html#b" target="_blank">第三次作业</a></li>
+
 </ul>
 	
 		

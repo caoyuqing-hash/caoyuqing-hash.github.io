@@ -42,7 +42,6 @@ ul {
 }
 </style>
 <div id="head">
-	<h1>SELF INTRODUCTION</h1>
 </div>
 <ul>
 <li><a href="https://caoyuqing-hash.github.io/cyq/" target="_blank">第一次作业</a></li>

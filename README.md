@@ -7,7 +7,7 @@
 	</head>
 	
 		<style type="text/css">
-body {background-image:url(caoyuqing-hash.github.io/cyq/img/1567779010041.jpeg);}
+body {background-image:url(https://github.com/caoyuqing-hash/caoyuqing-hash.github.io/blob/master/img/1567778903704.jpeg);}
 #head{color: crimson;text-align: center; font-family: elephant;}
 ul {
     list-style-type: none;

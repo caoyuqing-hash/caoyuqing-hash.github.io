@@ -1,0 +1,18 @@
+#content{
+	width: 1500px;
+	height: 300px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	border: 2px solid black;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	color: #eeeeee;
+	
+}
+#pic{float: right;
+width: 100px;
+height: 200px;
+}

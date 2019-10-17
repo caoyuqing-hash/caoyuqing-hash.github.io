@@ -2,8 +2,276 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>第四次作业</title>
 	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.content{
+			margin: 0 auto;
+			padding: 0;
+			background: url(img/1571304599825.jpeg);
+			width: 880px;
+			height: 2000px;
+		}
+		
+		ul{ 
+			list-style-type:none ;
+			width: 880px;
+			height: 72px;
+    		background-color: #f1f1f1;
+    		margin: 0;
+    		padding: 0;
+		}
+		.box1{
+			width: 800px;
+		    height: 220px;
+		   /*outline: dotted;*/
+		   margin: 50px;
+		   padding: 0;
+		   
+		 }
+		li{
+			float: left;
+			display: block;
+    		width: 25%;
+    		margin: 0;
+		   padding: 0;
+    		
+		}
+		.what:hover{
+			background: tan;
+		}
+		
+		.what
+		{
+			padding: 20px 8px;
+			height: 100%;
+			display: block;
+			color: firebrick;
+			font-size: x-large;
+    		text-align: center;
+    		text-decoration: none;
+			background: darkgray;
+		}
+		
+			
+		}
+		.box1b{
+			float: left;
+			/*outline: dotted;*/
+			width: 90%;
+			margin:0 auto;
+			
+			
+		}
+		
+		.box1b p:before{
+			content: "汨罗,";
+		font-family: "微软雅黑";
+		font-size: xx-large;}
+		
+		.box2{
+		   width: 800px;
+		   height: 280px;
+		   outline: double;
+		   position: relative;
+		   margin: 30px;
+		   padding: 0;
+			font-family: "宋体";
+		}
+		.box2a{
+			width: 230px;
+			height: 300px;
+			background: url(img/0bd162d9f2d3572cda0ef9228613632763d0c364.jpg);
+			background-size:cover ;
+			float: left;
+			/*outline:dashed
+			*/
+			
+		}
+		.box2b{
+			float: left;
+			/*outline: dotted;*/
+			width: 59%;
+			margin: 40px 30px;
+			
+		}
+		.box3{
+			width: 800px;
+		   height: 700px;
+		   /*outline: dotted;*/
+		   position: relative;
+		   margin: 50px;
+		   padding: 0;
+		   font-family: "楷体";
+		}
+		.box3a{
+			float: left;
+			text-align: center;
+			outline: double;
+			
+		}
+		.box3a1{
+			float: left;
+			width: 70%;
+		}
+		.box3a2{
+			float: left;
+			width: 220px;
+			height:170px ;
+			background: url(img/u=732186589,2631751325&fm=26&gp=0.jpg);
+			background-size: cover;
+			margin-left: 5px;
+			padding: 0;
+		}
+		.box3b{
+			float: left;
+			text-align: center;
+			outline: double;
+			margin-top: 20px;
+			
+		}
+		.box3b1{
+			float: left;
+			width: 70%;
+		}
+		.box3b2{
+			float: left;
+			width: 220px;
+			height:150px ;
+			background: url(img/timgUMG5O1F4.jpg);
+			background-size: cover;
+			margin-left: 5px;
+			padding: 0;
+		}
+		.box3c{
+			float: left;
+			text-align: center;
+			outline: double;
+			margin-top: 20px;
+			
+		}
+		.box3c1{
+			float: left;
+			width: 70%;
+		}
+		.box3c2{
+			float: left;
+			width: 220px;
+			height:140px ;
+			background: url(img/timg1ASYXA8D.jpg);
+			background-size: cover;
+			margin-left: 5px;
+			padding: 0;
+		}
+		.box4{
+			width: 800px;
+		   height: 500px;
+		   /*outline: dotted;*/
+		   position: relative;
+		   margin: 20px;
+		   padding: 0;
+		}
+		.box4a{
+			float: left;
+			/*text-align: center;*/
+			outline: double;
+			/*margin-top: 20px;*/
+			
+		}
+		.box4a1{
+			float: left;
+			width: 70%;
+			text-align: center;
+			
+		}
+		.box4a2{
+			float: left;
+			width: 220px;
+			height:170px ;
+			background: url(img/quyuan.jpg);
+			background-size: cover;
+			margin-left: 5px;
+			padding: 0;
+		}
+		.box4b{
+			float: left;
+			text-align: center;
+			outline: double;
+			margin-top: 20px;
+		}
+		.box4b1{
+			float: left;
+			width: 70%;
+			text-align: center;
+			
+		}
+		.box4b2{
+			float: left;
+			width: 220px;
+			height:170px;
+			background: url(img/ren.jpg);
+			background-size: cover;
+			margin-left: 5px;
+			padding: 0;
+			
+		}
+		
+	</style>
 	<body>
+		
+		<div class="content">
+		<div class="nav"><ul >
+			<li ><a class="what" href="#introduce">了解汨罗</a></li>
+			<li ><a class="what" href="#natrue">自然地理</a></li>
+			<li ><a class="what" href="#costume">习俗风情</a></li>
+			<li ><a class="what" href="#cultrue">文化名人</a></li>
+		</ul></div>
+		<div class="box1" id="introduce">
+			<!--<div class="box1a"><h1>汨罗</h1></div>-->
+			<div class="box1b"><p>简称罗城，隶属于岳阳市，处湖南省东北部，紧靠洞庭湖东畔、汨罗江下游。汨罗市东部、东南部分别与长沙市长沙县、望城区接壤，西邻湘阴县和沅江市，北接岳阳县,东北与平江县交界。因境内有汨水、罗水会合，其下游名汨罗江，因以名市，是“中国龙舟名城”。总面积1669.8平方千米，城区面积近10平方公里。
+			汨罗市交通发达，京广铁路，京广高铁，107国道，京珠高速纵贯市境。汨罗农业基础坚实，是中国商品粮基地县（市）；再生资源集散市场被国务院批准列为国家循环经济试点。汨罗江是战国时期文学家屈原自沉之地，现有屈子祠、屈原墓等纪念屈原的古迹建筑。
+汨罗市先后被命名为全国基础教育先进县，全国体育先进县，全国卫生先进城市。2012年，汨罗入选年度湖南省县域经济十强县（市）。 </p></div>
+		</div>
+		<div class=box2 id="natrue">
+			<div class="box2a"></div>
+		<div class="box2b"><p>汨罗位于湖南省东北部，属幕阜山脉与洞庭湖平原的过渡地带，西临洞庭湖。地处东经112°51′-113° 27′，北纬28°28′-29°27′之间。地势由东南向西北倾斜。 汨罗市东与平江相靠，南与长沙、望城两县相携，西与湘阴县、沅江市接壤，北同岳阳县毗邻。最东处为三江镇山阳村的山阳寨，最西处是芦苇场的石湖包，最南端系川山坪镇鹿峰村的陈家湾，最北端是白塘镇汨岳村的汨岳界。南北相距66.75公里，东西相距62.5公里，全境周长301.84公里，总面积1669.8平方公里，汨罗市建城区面积12平方公里。</p></div>
+		</div>
+		<div class="box3" id="costume">
+			<h1>习俗风情</h1>
+			<div class="box3a"><h2>端午习俗</h2>
+			<div class="box3a1"><p>汨罗江畔端午习俗是具有一整套丰富、独特而又神秘的端午习俗，分布于汨罗市的汨罗江流域中下游一带。二十世纪五十年代汨罗江龙舟赛 
+汨罗江畔端午节一般从农历五月初一开始到十五日止，整个节日活动具有悠久的历史性、广泛的群众性、丰富的多样性、浓郁的文化性、狂热的参与性和深远的影响。
+2005年，“汨罗江畔端午习俗”进入了第一批国家级非物质文化遗产保护名录。2009年9月30日，被列入联合国《人类非物质文化遗产代表作名录》。</p></div>
+			<div class="box3a2"></div>
+			</div>
+     <div class="box3b"><h2>长乐故事会</h2>
+     	<div class="box3b1"><p>汨罗市长乐抬阁故事会源于隋唐，盛于明清，由元闹花灯中演变而来，是一项集惊、奇、险、巧于一体的传统民间杂技，并集表演、彩绘、历史、天文、地理、文学、民情、时代精神等融为一体的独特的、古老而又神秘的民间行为艺术。故事会分为地故事、地台故事、高彩故事、高跷故事四大类，分上、下市街故事会。2012年，获国家级非物质文化遗产称号。</p></div>
+        <div class="box3b2"></div>
+     </div>
+     <div class="box3c"><h2>地花鼓</h2>
+     	<div class="box3c1"><p>地花鼓属灯舞类，最初仅限于春节等传统佳节时与大闹花灯活动穿插进行，汇同“狮子”、“龙灯”、“彩莲船”一起进行表演，载歌载舞，情节生动，内容朴实，表演风趣，喜闻乐见。这种文化习俗后来逐渐进入人们日常生活领域，民间操办红白喜事也打起花鼓子来。 </p></div>
+     <div class="box3c2"></div>
+     </div>
+		</div>
+		<div class="box4" id="cultrue"><h1>文化名人</h1>
+			<div class="box4a">
+				<div class="box4a1"><h2>屈原</h2>
+				<p>汨罗是世界文化名人、伟大的爱国主义诗人屈原晚年居住、写作和投江殉节之地。战国时期，楚国左徒屈原在遭奸佞诬陷被放逐江南后辗转来到汨罗江北岸的南阳里、玉笥山居住9年，创作了《天问》、《离骚》、《九歌》、《哀郢》、《怀沙》等光辉诗篇，这些现实主义和浪漫主义相结合的作品，对中国文学艺术产生了深远的影响。</p>
+			</div>
+			<div class="box4a2"></div>
+			
+			<div class="box4b">
+				<div class="box4b1"><h2>任弼时</h2>
+				<p>任弼时（1904年4月30日—1950年10月27日，Ren Bishi，Бринский），原名任培国，湖南汨罗人。伟大的马克思主义者，杰出的无产阶级革命家、政治家、组织家，中国共产党和中国人民解放军的卓越领导人，以毛泽东同志为核心的中国共产党第一代领导集体的重要成员。</p></div>
+		
+		<div class="box4b2"></div></div>
+		
+			</div>
+			
+		</div>
 	</body>
 </html>

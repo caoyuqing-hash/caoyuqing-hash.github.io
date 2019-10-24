@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		.eye {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #845A33;
+    background: #FFB61E;
+    overflow: hidden;
+}
+.eye .eyelid-top, .eye .eyelid-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #845A33;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    /*animation-delay: 2s;*/
+    animation-iteration-count: infinite;
+    /*animation-play-state: running;*/
+}
+.eye .eyelid-top {
+    top: -70%;
+    height: 64%;
+    border-bottom: 2px solid #845A33;
+    border-radius: 50% 50% 0 0;
+    animation: eyelid-blink-top 30s;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    /*animation-delay: 2s;*/
+    animation-iteration-count: infinite;
+    /*animation-play-state: running;*/
+}
+.eye .eyelid-bottom {
+    bottom: -40%;
+    height: 36%;
+    border-top: 2px solid #845A33;
+    border-radius: 0 0 50% 50%;
+    animation: eyelid-blink-bottom 30s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    /*animation-delay: 2s;*/
+    animation-iteration-count: infinite;
+    /*animation-play-state: running;*/
+}
+@keyframes eyelid-blink-top    {0% {top:    -70%;} 1% {top:    0;} 2% {top:    -70%;} 100% {top:    -70%;}}
+@keyframes eyelid-blink-bottom {0% {bottom: -40%;} 1% {bottom: 0;} 2% {bottom: -40%;} 100% {bottom: -40%;}}</style>
+	</head>
+	<body>
+	<div>
+    <div class="eye" style="float:left;">
+        <div class="eyelid-top"></div>
+        <div class="eyelid-bottom"></div>
+    </div>
+    <div class="eye" style="float:left; margin-left: 100px;">
+        <div class="eyelid-top"></div>
+        <div class="eyelid-bottom"></div>
+    </div>
+</div>
+	</body>
+</html>

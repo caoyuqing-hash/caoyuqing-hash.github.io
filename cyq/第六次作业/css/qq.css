@@ -223,7 +223,8 @@ li a:hover{
 	background: transparent;
 	padding-right: ;
 }
-
+#hunan:hover{
+	border-bottom: 4px solid #1479D7;}
 /*.searchTab{
 	background:white;
 	z-index: 1;
@@ -932,3 +933,9 @@ a:hover{
 		float: left;
 		position: relative;
 		color: red;}
+
+.title{
+	font-weight: bold;
+	width: 1400px;
+	position: relative;
+	float: left;}

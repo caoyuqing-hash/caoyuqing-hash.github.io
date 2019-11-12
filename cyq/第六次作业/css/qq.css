@@ -939,3 +939,6 @@ a:hover{
 	width: 1400px;
 	position: relative;
 	float: left;}
+.q-icons .l-qzone .fl img{
+		position: absolute;
+		top: -80px;}

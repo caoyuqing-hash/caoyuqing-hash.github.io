@@ -146,35 +146,31 @@
 			</div>-->
 
 			<script>
-//				
-					let wrap = document.getElementById("wrap");
-					let box = document.getElementById("pic_box");
-					let prev = document.getElementById("Prev");
-					let next = document.getElementById("Next");
-					var flag1 = false;
-					
-					var count=1;
-					
-					next.onclick = function() {
-						if(parseInt(box.style.left) <=-6000) {
-//							box.style.left = box.offsetLeft+speed+1000+"px";
-							box.style.left = "0px";
-						} 
-						else {
-							box.style.left = parseInt(box.style.left) - 1000 + "px";
-						}
-					};
-					prev.onclick = function() {
-						if(parseInt(box.style.left) >= 0) {
-							box.style.left = "-1000px";
-							
-						} else {
-							box.style.left = parseInt(box.style.left) + 1000 + "px";
-						}
-					}
-					
-					
-			</script>
+	//				
+	let wrap = document.getElementById("wrap");
+	let box = document.getElementById("pic_box");
+	let prev = document.getElementById("Prev");
+	let next = document.getElementById("Next");
+	var flag1 = false;
+
+	var count = 1;
+
+	next.onclick = function() {
+		if(parseInt(box.style.left) <= -6000) {
+			box.style.left = "0px";
+		} else {
+			box.style.left = parseInt(box.style.left) - 1000 + "px";
+		}
+	};
+	prev.onclick = function() {
+		if(parseInt(box.style.left) >= 0) {
+			box.style.left = "-1000px";
+
+		} else {
+			box.style.left = parseInt(box.style.left) + 1000 + "px";
+		}
+	}
+</script>
 	</body>
 
 </html>

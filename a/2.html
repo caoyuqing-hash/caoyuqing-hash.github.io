@@ -9,7 +9,8 @@
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
-				transition: all 2s ;
+				transition: all 2s;
+				-webkit-user-select: none;
 			}
 			
 			div {
@@ -18,26 +19,26 @@
 			
 			#wrap {
 				width: 1000px;
-				height: 520px;
+				height: 500px;
 				position: relative;
-				margin: 50px auto;
+				margin: 100px auto;
 				overflow: hidden;
 				/*background-color: red;*/
 			}
 			
 			#pic_box {
-				width: 8000px;
+				width: 7000px;
 				position: absolute;
 			}
 			
 			#pic_box li {
 				float: left;
-				height: 520px;
+				height: 500px;
 			}
 			
 			.pic {
 				width: 1000px;
-				height: 520px;
+				height: 500px;
 				font-size: 200px;
 				font-weight: 500;
 				text-align: center;
@@ -71,10 +72,7 @@
 			#Prev:hover {
 				background: rgba(204, 204, 204, 0.4);
 			}
-			img{
-				height: 520px;
-				width: 1000px;
-			}
+			
 			#list {
 				position: absolute;
 				bottom: 10px;
@@ -95,40 +93,35 @@
 			#list .on {
 				background: #e27a00;
 			}
-			span .on{
-				background: yellow;
-			}
 		</style>
 	</head>
 
 	<body>
-		<div id="wrap" class="ok">
+		<div id="wrap">
 			<ul id="pic_box" style="left: -1000px;">
 				<li>
-					<div  class="pic"><img src="img/批注 2019-11-13 212611.png" />6</div>
+					<div style="background-color: #BAAF72;" class="pic">5</div>
 				</li>
 				<li>
-				<div  class="pic" id="box1"><img src="img/批注 2019-11-13 212137.png" width="1000px" height="520px"/>1</div>
+					<div style="background-color: #CC0000;" class="pic">1</div>
 				</li>
 				<li>
-					<div class="pic"><img src="img/批注 2019-11-13 212211.png" />2</div>
+					<div style="background-color: #3481CF;" class="pic">2</div>
 				</li>
 				<li>
-					<div  class="pic"><img src="img/批注 2019-11-13 212332.png" />3</div>
+					<div style="background-color: #7FFFD4;" class="pic">3</div>
 				</li>
 				<li>
-					<div class="pic"><img src="img/批注 2019-11-13 212458.png" />4</div>
+					<div style="background-color: #99CCFF;" class="pic">4</div>
 				</li>
 				<li>
-					<div style="background-color: #BAAF72;" class="pic" href="#box1"><img src="img/批注 2019-11-13 212523.png" />5</div>
+					<div style="background-color: #BAAF72;" class="pic">5</div>
 				</li>
 				<li>
-					<div style="background-color: #CC0000;" class="pic"><img src="img/批注 2019-11-13 212611.png" />6</div>
-				</li>
-				<li>
-					<div style="background-color: red;" class="pic"><img src="img/批注 2019-11-13 212137.png" width="1000px" height="520px"/>1</div>
+					<div style="background-color: #CC0000;" class="pic">1</div>
 				</li>
 			</ul>
+
 			<div id="Prev">
 				<div class="sign">
 					<</div>
@@ -136,20 +129,17 @@
 				<div id="Next">
 					<div class="sign">></div>
 				</div>
-		
-			<ul id="list">
-				<li class="on"></li>
-				<li ></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				
-			</ul>
-	</div>
+				<ul id="list">
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+
 			<script>
-	//				
-	let wrap = document.getElementById("wrap");
+				let wrap = document.getElementById("wrap");
 				let box = document.getElementById("pic_box");
 				let prev = document.getElementById("Prev");
 				let next = document.getElementById("Next");
@@ -186,7 +176,7 @@
 					} else {
 						moving = true;
 						box.style.transition = "all 2s";
-						if(parseInt(box.style.left) <= -6000) {
+						if(parseInt(box.style.left) <= -5000) {
 							box.style.left = parseInt(box.style.left) - 1000 + "px";
 							showing = 0;
 							showlist();
@@ -223,7 +213,7 @@
 							showlist();
 //							console.log("showing = " + showing);
 							setTimeout(function() {
-								box.style.left = "-6000px";
+								box.style.left = "-5000px";
 								box.style.transition = "none";
 
 							}, 2000);
@@ -232,36 +222,23 @@
 							showing--;
 							showlist();
 //							console.log("showing = " + showing);
-}
-setTimeout(function() {
-	moving = false;
-}, 2000);
 
-}
-}
+						}
+						setTimeout(function() {
+							moving = false;
+						}, 2000);
 
-function showlist() {
-	for(var i = 0; i < list.length; i++) {
-		list[i].className = "";
-	}
-	list[showing].className = "on";
-}
-
-function play(){//自动切换函数
-					timer = setInterval(function(){
-						next.onclick();
-					},1000);//每1秒触发一次点击右箭头事件
+					}
 				}
-function stop(){//自动切换停止函数
-					clearInterval(timer);//清除定时器
-				}
-				
-				box.onmouseover = stop;//鼠标移动到容器内停止自动切换
-				box.onmouseout = play;//鼠标在容器外执行自动切换
-				
-				play();
 
-</script>
+				function showlist() {
+					for(var i = 0; i < list.length; i++) {
+						list[i].className = "";
+					}
+					list[showing].className = "on";
+				}
+			</script>
 	</body>
 
+</html>
 </html>

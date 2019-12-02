@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav ul{
+	list-style-type: none;
+	float: right;
+	margin-right:280px ;
+	margin-top: 3px;
+}
+.logo{
+	float: left;
+	padding-left:161px ;
+	margin-top:3px ;
+}
+.nav li{
+	float: left;
+	padding: 0 20px;
+	background-image:url(../img/denys-nevozhai-191635 拷贝.png) ;
+}
+.nv {
+	height: 580px;
+	width: 60.89%;
+
+	float: right;
+	padding: 0;
+	position: relative;
+}
+.nv img{
+	height: 588px;
+	width: 100%;
+}
+.page1,.page2,.page3,.page4{
+	width:100%;
+	height:650px;
+}
+.page1{
+	background: yellow;
+}
+.page2{
+	background: brown;
+}
+.page3{
+	background: salmon;
+}
+.page4{
+	background: yellow;
+}
+
+.text{
+	float: left;
+	height: 500px;
+	width:100% ;
+	position: relative;
+	z-index: 1000;
+		top: -500px;
+		margin-left:100px ;
+}
+.kou img{
+	height: 100px;
+	width: 400px;
+
+}
+.page {
+	width: 100%;
+	height: 100%;
+}
+
+
+#tags {
+	position: fixed;
+	top: 50%;
+	left: 2%;
+	width: 20px;
+	z-index: 10000;
+	list-style: none;
+	margin-top: -80px;
+}
+
+#tags li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #840505;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+#tags li.active {
+	background-color: green;
+}
+.reping{
+	float: left;
+	height: 600px;
+	width: 34.7%;
+	background: red;
+}

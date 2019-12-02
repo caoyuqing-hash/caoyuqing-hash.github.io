@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>创业计划书</title>
+  <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <style>
+  *{
+	   	margin:0;
+	   	padding: 0;
+	   }
+	   a,a:hover{
+	   	text-decoration: none;
+	   }
+	   html,body{
+	   	width: 100%;
+	   	height: 100%;
+	   	overflow: hidden;
+	   }
+	         .wrapper{
+       	width:100%;
+       	height: 100%;
+       	position: relative;
+       	top: 0;
+       }
+       .page{
+       	width:100%;
+       	height: 100%;
+       }
+       .page:nth-child(1){background:url(img/1572191342807.jpeg);background-size: cover;}
+       .page:nth-child(2){background:url(img/1567778903704.jpeg);background-size: cover;}
+       .page:nth-child(3){background:url(img/QQ图片20191027235946.jpg);background-size: cover;}
+       .page:nth-child(4){background:url(img/1573114248928.jpeg);background-size: cover;}
+              #tags{
+       	position: fixed;
+       	top:50%;
+       	right: 2%;
+       	width: 20px;
+       	z-index: 10000;
+       	list-style: none;
+       	margin-top:-80px;
+       }
+       #tags li{
+       	width: 8px;
+       	height: 8px;
+       	line-height: 20px;
+       	color: #fff;
+       	text-align: center;
+       	background-color:firebrick;
+       	border-radius: 50%;
+       	margin-bottom: 20px;
+              cursor: pointer;
+       }
+       #tags li.active{
+       	background-color: orange;
+       	width: 10px;
+       	height: 10px;
+       }
+       .page-wrapper{
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0,0,0,0.5);
+       }
+.box1{
+	
+	padding: 40px;
+	text-align:start;
+	font-size:30px ;
+	color:	darkgray;font-family: "宋体";
+	line-height: 50px;
+}
+.jiantou{
+	padding: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	
+}
+
+  </style>
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+</head>
+<body>
+ 
+<ul id="tags">
+       <li class="active"></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+    
+    <div class="wrapper" id="wrapper">
+    	<div class="page">
+    		<div class="page-wrapper">
+            <div class="page01"><div class="jiantou"><a href="new_file.html">👈</a></div>
+            	<div class="box1"><h1 style="text-align: center;">创业计划书</h1>
+            		<h2>创业项目介绍</h2>
+            		<p>拟定标题：读书三余</p>
+            		<p>经营理念：和平与发展</p>
+            		<p>创业初衷：创造一个属于热爱阅读，热爱写作的爱好者的平台</p>
+            		<p>运营项目:投稿，卖书，新书换购等</p>
+            		
+            	</div>
+            </div></div>
+    	</div>
+    	<div class="page">
+            <div class="page-wrapper">
+                <div class="page02">
+                	<div class="box1">
+                	<h2>组织机构和人员</h2>
+                	<h3>组织机构</h3><p>人员数量在10人左右(最初)，分为财务部，外联部，生产部，客服等。</p>
+                <h3>人员</h3>	<p>成员具有上进心和责任心，能够从容地处理公司事务，能够认真地对待公司的每件事和每个人，有能力应对生意上的挫折和困难，并且能够解决相应的问题。</p>
+                </div></div>
+            </div>
+    	</div>
+    	<div class="page">
+            <div class="page-wrapper">
+                <div class="page03">
+                	<div class="box1">
+                		<h2>创新点</h2>
+                		<p>在这个快速发展的时代，我认为文学艺术永不过时。我们不仅提供为你实现创作的想法，还能以书籍换购的形式让读者们找到喜爱自己的书籍。</p>
+                		<h2>核心竞争力</h2>
+                		<p>如今这种类似的平台很多，但似乎遥不可及，也得不到一定的保障。这个计划就是触手可及，我们的业务首先在学校展开，能为大家提供平易近人的服务，为大家的兴趣实现提供一个平台</p>
+                		<h2>营销策略</h2><p>附近大学生较多，信息传播速度快，可通过多种方式进行宣传，可通过举办读书会等活动吸引消费者。
+                	</p></div>
+                </div>
+            </div>
+    	</div>
+    	<div class="page">
+            <div class="page-wrapper">
+                <div class="page04">
+                	<div class="box1">
+                		<h2>预测</h2>
+                		<p>投资预测：启动基金30万</p>
+                		<p>利润预测：一年后开始盈利。</p>
+                		<p>未来发展预测：谁知道呢</p>
+                	</div>
+                </div>
+            </div>
+    	</div>
+    </div>
+
+ 
+<script>
+$(function() {
+       	var wrapper =$('#wrapper');
+        var pages=wrapper.children;
+        var tags =$("#tags");
+        var lis =$('li');
+//        导航切换
+        for (var j = 0; j < lis.length; j++) {
+          lis[j].index=j;
+        	lis[j].onclick=function(){
+            for (var n= 0; n< lis.length; n++) {
+              lis[n].className="";
+            }
+           this.className="active";
+           $("#wrapper").animate({top:(-100*this.index+"%")},1000); 
+        	}
+        }
+        //键盘上下键切换
+             var x=0;
+             var omark=false;
+        	document.onkeyup=function(event){
+        		var event =event||window.event||arguments.callee.caller.arguments[0];
+        		if (omark) {return;}
+        		omark =true;
+        		if (event&&event.keyCode==38) {
+        			x--;
+        			if (x<0) {x=0;}
+        			$("#wrapper").animate({top:'-'+100*x+"%"},500,function(){omark=false;});
+        			}
+      			if (event &&event.keyCode==40) {
+      				x++;
+      				if (x>3) {x=3;}
+        			$("#wrapper").animate({top:'-'+100*x+"%"},500,function(){omark=false;});
+        			}
+            for (var n= 0; n< lis.length; n++) {
+              lis[n].className="";
+            }
+        		lis[x].className="active";
+        	}
+//          鼠标滚动
+          var wheel= function (event) {
+            var delta=0;
+            if(!event)//for ie
+                event=window.event;
+            if(event.wheelDelta){   //ie,opera
+                delta=event.wheelDelta/120;
+            }else if(event.detail){
+                delta=-event.detail/3;
+            }
+            if(delta){
+                handle(delta,lis);
+            }
+            if(event.preventDefault)
+                event.preventDefault();
+                event.returnValue=false;
+          }
+           if(window.addEventListener){
+            window.addEventListener('DOMMouseScroll',wheel,false);
+            }
+            window.onmousewheel=wheel;
+            var num;
+            function handle(delta,arr) {
+               for(var i=0;i<arr.length;i++){
+                  if(arr[i].className=="active"){
+                      num=i;
+                   }
+                }
+               if(delta>0 && num>0){//向上滚动
+                   num--;
+                   for (var n= 0; n< lis.length; n++) {
+                     lis[n].className="";
+                   }
+                   arr[num].className="active";
+               }else if(delta<0 && num<3){//向下滚动
+                   num++;
+                   for (var n= 0; n< lis.length; n++) {
+                     lis[n].className="";
+                   }
+                   arr[num].className="active"; 
+               }
+               $("#wrapper").animate({top:(-100*num+"%")},500);
+            }
+     });
+
+</script>
+ 
+</body>
+</html>

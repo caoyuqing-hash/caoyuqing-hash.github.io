@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+ <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js" ></script>
+       <script type="text/javascript" src="js/tab.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://www.yucai.net.cn/jianbihua/UploadFiles_5694/201411/20141102122224830.gif"/>
+    <title>读书三余</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="co.css" />
+<style>
+	*{text-decoration: none;margin: 0;padding: 0;list-style: none;}
+                #hear{width: 100%;height: 44px;line-height: 45px;border-bottom: 1px solid #cccccc;}
+                #hear a{font-weight: normal;color: black;}
+                #hear li{text-align: center;float: left;height: 45px;}
+                #hear li:nth-of-type(1){width: 33%;float: left;}
+                #hear li:nth-of-type(2){width: 33%;float: left;}
+                #hear li:nth-of-type(3){width: 34%;float: right;}
+                #contentop li{ width: 90%; display: none;text-align: center;margin: 0 auto;margin-top: 12px;}
+                #contentop .action{ display: block;}
+                #contentop .usl{width: 100%;height: 110px;background:wheat;border: 1px solid #cccccc;margin-bottom: 10px;text-shadow: none;}           
+                #contentop .alo{width: 100%;height: 110px;background: white;border: 1px solid #cccccc;margin-bottom: 10px;text-shadow: none;}
+                #contentop span{font-size: 1.3em;color: #47B0D7;}
+                #contentop .sty1{margin-top: 18px;}
+                #contentop .sty2{margin-top: 13px;}
+                #contentop .sty3{margin-top: 13px;}
+                #contentop .sty4{text-align: right;font-size: 0.8em;margin-top: -20px;}
+                #contentop .Buy{font-size: 0.8em;margin-top: 2px;}
+                #contentop .Buy div:nth-of-type(1){text-align: left;padding-left: 15px;}
+                #contentop .Buy div:nth-of-type(2){float: right;}
+                #contentop .cllio {background:url(../img/20010.png)repeat-x;width: 93%;height:8px;margin: 0 auto;margin-top: 5px;}
+			#contentop #li1{
+				height: 500px;
+				background:rgba(10,0,0,0.5);
+			
+			}
+			#li2{
+				height: 500px;
+				background: lightblue;
+				
+			}
+			#li3{
+				height: 500px;
+				
+				/*background: lightblue;*/
+			}
+			.cpr{
+				margin: 0 auto;
+				color: gray;
+			}
+</style>
+</head>
+<body style="background-image:url(img/1568257023739.jpeg);">
+
+    <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+    <nav id="menu">
+        <ul>
+          <li class="rocket"><a href="new_file.html"><div><i class="fa fa-rocket fa-4x"></i></div>introduce</a></li>
+          <li class="wine"><a href="community.html"><div><i class="fa fa-mars-double fa-4x"></i></div>community</a></li>
+          <li class="burger"><a href="purchase.html"><div><i class="fa fa-refresh fa-4x"></i></div>purchase</a></li>
+          <li class="comment"><a href=""><div><i class="fa fa-hand-rock-o fa-4x"></i></div>sign in</a></li>
+          <li class="sport" >
+          	<a href="plan.html"><div><i class="fa fa-child fa-4x"></i></div>plan</a>
+          </li>
+        
+          <div class="current">
+              <div class="top-arrow"></div>   
+              <div class="current-back"></div>
+              <div class="bottom-arrow"></div>
+          </div>
+        </ul>
+    </nav>
+    
+    <div id="wrap" class="ok">
+			<ul id="pic_box" style="left: -1000px;">
+				<li>
+					<div  class="pic" style="background: red;"><img src="img/1575183341928.jpeg">6</div>
+				</li>
+				<li>
+				<div  class="pic" id="box1" style="background-color:red;"><img src="img/1575183079944.jpeg" width="1000px" height="520px"/>1</div>
+				</li>
+				<li>
+					<div class="pic" style="background-color: lawngreen;"><img src="img/1575183082336.jpeg" width="1000px" height="520px"/>2</div>
+				</li>
+				<li>
+					<div  class="pic" style="background-color: #07BEEA;"><img src="img/1575183367702.jpeg" width="1000px" height="520px"/>3</div>
+				</li>
+				<li>
+					<div class="pic" style="background-color: #D2691E;"><img src="img/1575183195007.jpeg" width="1000px" height="520px"/>4</div>
+				</li>
+				<!--<li>
+					<div style="background-color: #BAAF72;" class="pic" href="#box1"><img src="img" width="1000px" height="520px"/>5</div>
+				</li>-->
+				<li>
+					<div  class="pic" style="background: red;"><img src="img/1575183341928.jpeg">6</div>
+					
+				</li>
+				<li>
+				<div  class="pic" id="box1" style="background-color:red;"><img src="img/1575183079944.jpeg" width="1000px" height="520px"/>1</div>
+				</li>
+			</ul>
+			<div id="Prev">
+				<div class="sign">
+					<</div>
+				</div>
+				<div id="Next">
+					<div class="sign">></div>
+				</div>
+		
+			<ul id="list">
+				<li class="on"></li>
+				<li ></li>
+				<li></li>
+				<li></li>
+				<li></li>
+		
+				
+			</ul>
+			</div>
+	  <div data-role="page">
+        <div data-role = "content-floud">           
+            <div style="font-family: '微软雅黑';">
+                <ul id="hear">
+                    <li class="action" style="border-bottom: 2px solid red;height: 43px;"><a href="javascript:void(0)">精华<span style="color: red;">(0)</span></a></li>
+                    <li><a href="javascript:void(0)" >讨论<span style="color: red;">(8)</span></a></li>
+                    <li class="tougao" onmousedown="myFunction()"><a href="javascript:void(0)" >投稿<span style="color: red;">(2)</span></a></li>
+                </ul>
+                <ul id="contentop">
+                    <li class="action" id="li1">
+                      <div class="jinghua">
+                      	<div class="poem">
+           <p> 你的头 像皮球</p><p>一脚踢到了百货大楼</p>
+          <p> 百货大楼 卖皮球 </p><p>卖的就是 你的头</p></div><div class="huan"><div><i class="fa fa-refresh fa-5x"></i></div>
+          	<div class="re">换一换</div>
+          </div></div>
+                    </li>
+                    <li id="li2" >
+                     <div class="taolun">
+                     	<div class="pinglun">
+                     		<img src="img/批注 2019-12-01 193126.png" style="width: 100%;height: 125px;"/>
+                     	<img src="img/批注 2019-12-01 192920.png" style="width: 100%;height: 125px;"/>
+                     	<img src="img/批注 2019-12-01 192419.png" style="width: 100%;height: 125px;"/>
+                     	<img src="img/批注 2019-12-01 192851.png" style="width: 100%;height: 120px;"/>
+                     	</div>
+                     	<div class="huifu">
+                     		<div class="huifu1"><p>发表回复</p></div>
+                     		<div class="huifu2"><input type="text" name="dd" />   </div>   	
+                	<div class="huifu3">发表</div></div>
+                    
+                     </div>
+                    </li>
+                    <li id="li3" onclick="myFunction()">
+                       <img src="img/1575183001438.gif" style="height: 500px;" />
+                    </li>
+                </ul>
+            </div> 
+            <div class="cpr">copyright@魔法少女</div>
+        </div>                   
+    </div>
+<script>
+	//				
+	let wrap = document.getElementById("wrap");
+				let box = document.getElementById("pic_box");
+				let prev = document.getElementById("Prev");
+				let next = document.getElementById("Next");
+				let list = document.getElementById('list').getElementsByTagName('li');
+				var register="请先登录 <span style='color:red;'></span>";
+				var moving = false;
+				var showing = 0;
+				for(let i = 0; i < list.length; i++) {
+					list[i].nub = i;
+					list[i].onclick = function() {
+						if(this.className == "on") {
+							return;
+						}
+						if(moving) {
+							return;
+						} else {
+							moving = true;
+							box.style.transition = "all " + Math.abs(this.nub - showing) + "s";
+							box.style.left = parseInt(box.style.left) - 1000 * (this.nub - showing) + "px";
+
+						}
+
+						setTimeout(function() {
+							moving = false;
+						}, 2000);
+						showing = this.nub;
+						showlist();
+					
+					};
+				}
+
+				next.onclick = function() {
+					if(moving) {
+						return;
+					} else {
+						moving = true;
+						box.style.transition = "all 2s";
+						if(parseInt(box.style.left) <= -5000) {
+							box.style.left = parseInt(box.style.left) - 1000 + "px";
+							showing = 0;
+							showlist();
+//							console.log("showing = " + showing);
+							setTimeout(function() {
+								box.style.left = "-1000px";
+								box.style.transition = "none";
+
+							}, 2000);
+
+						} else {
+							box.style.left = parseInt(box.style.left) - 1000 + "px";
+
+							showing++;
+							showlist();
+//							console.log("showing = " + showing);
+
+						}
+						setTimeout(function() {
+							moving = false;
+						}, 2000);
+					};
+				}
+				prev.onclick = function() {
+					if(moving) {
+						return;
+					} else {
+						moving = true;
+						box.style.transition = "all 2s";
+						if(parseInt(box.style.left) >= -1000) {
+							moving = true;
+							box.style.left = parseInt(box.style.left) + 1000 + "px";
+							showing = list.length - 1;
+							showlist();
+//							console.log("showing = " + showing);
+							setTimeout(function() {
+								box.style.left = "-5000px";
+								box.style.transition = "none";
+
+							}, 2000);
+						} else {
+							box.style.left = parseInt(box.style.left) + 1000 + "px";
+							showing--;
+							showlist();
+//							console.log("showing = " + showing);
+}
+setTimeout(function() {
+	moving = false;
+}, 2000);
+
+}
+}
+
+function showlist() {
+	for(var i = 0; i < list.length; i++) {
+		list[i].className = "";
+	}
+	list[showing].className = "on";
+}
+
+function play(){//自动切换函数
+					timer = setInterval(function(){
+						next.onclick();
+					},1000);//每1秒触发一次点击右箭头事件
+				}
+function stop(){//自动切换停止函数
+					clearInterval(timer);//清除定时器
+				}
+				
+				wrap.onmouseover = stop;//鼠标移动到容器内停止自动切换
+				wrap.onmouseout = play;//鼠标在容器外执行自动切换
+//				prev.onmouseover =stop;
+//				prev.onmouseout =play;
+				
+				play();
+$(function(){
+            $("#hear li").hover(function(){
+                $(this).css({
+                    borderBottom: "2px solid red",
+                    height:"43px"
+                }).siblings().css({
+                    borderBottom: "none",
+                    height:"45px"
+                });
+            });                   
+                 
+            $("#hear li").hover(function(){
+                $(this).addClass("action").siblings().removeClass("action");
+                var index = $(this).index();
+                $("#contentop li").eq(index).css("display","block").siblings().css("display","none");
+            });
+        });
+function myFunction(){
+	alert("请先登录");
+}
+</script>
+
+</body>
+</html>

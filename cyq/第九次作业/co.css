@@ -1,0 +1,76 @@
+.poem{
+	line-height: 30px;
+	font-family: "微软雅黑";
+	font-size:50px;
+	width: 70%;
+	margin: 0 auto;
+	float: left;
+	
+	line-height: 120px;
+	color: wheat;
+	/*opacity: 0.5;*/
+	
+}
+
+.jinghua p:hover{
+	color: rgba(0,0,0,0.1);
+	text-shadow: 2px 2px white;
+	transition: all 1s;
+	
+}
+.huan{
+	width: 30%;
+	height: 100%;
+	float: left;
+	padding-top: 140px;
+	color: peru;
+	
+	margin: 0 auto;
+	
+}
+.re{
+	
+	height: 80px;
+	width: 200px;
+	color: white;
+	text-shadow: 2px 2px lightgray;
+	line-height: 60px;
+	
+	font-size: 40px;
+	margin: 30px auto;
+}
+
+.pinglun{
+	width: 70%;
+	height: 500px;
+/*	background: firebrick;*/
+	float: left;
+}
+.huifu{
+	background: lightblue;
+	/*width: 30%;
+	height: 500px;
+	float: left;*/
+}
+.huifu1{
+	float: left;
+	margin: 16px;
+	font-size: 30px;
+}
+.huifu2{
+	float: left;
+	margin: 15px;
+}
+.huifu2 input{
+	height: 200px;
+	width: 300px;
+}
+.huifu3{
+	float: left;
+	background: #87CEFA;
+	height: 40px;
+	width: 80px;
+	line-height: 40px;
+	border-radius: 10px;
+	margin: 15px;
+}

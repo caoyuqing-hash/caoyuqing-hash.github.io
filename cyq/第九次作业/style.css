@@ -44,27 +44,10 @@ white-space: nowrap;
 background-position: 50%;
 }
 .rocket {
-/*background: url(../fontawesome)no-repeat;
-background-size:100% 100% ;*/
+
 margin-left: 1.42857%;
 }
-.wine{
-  background:url('../img/wine-large.png')no-repeat;  
-}
-.burger{
-  background:url('../img/burger-large.png')no-repeat;
-}
-.comment{
-  background:url('../img/comment-large.png')no-repeat;
 
-}
-.sport{
-  background:url('../img/sport-large.png')no-repeat;
-
-}
-.earth{
-  background:url('../img/earth-large.png')no-repeat;  
-}
 ul{
 	cursor: pointer;
 	}
@@ -104,9 +87,9 @@ left: -9.5238%;
 background: url('../img/menu-bg.png');
 border-radius: 5px 0px 0px 5px;
 }
-.earth:after{
+/*.earth:after{
   border-radius:0px 5px 5px 0px;
-}
+}*/
 .current{
   position:absolute;
   top:-13px;
@@ -192,6 +175,8 @@ transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
   margin-left:-8px;
   left:50%;
 }
+.rocket:hover ~ .current{
+	left: 10.8%;}
 
 .wine:hover ~ .current{
   left: 30%;
@@ -328,11 +313,11 @@ img{
 
 
 .box2{
-	margin: 30px 0;
+	margin: 20px 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	line-height: 70px;
+	line-height: 80px;
 	font-size: xx-large;
 	font-weight: 300;
 	height: 300px;
@@ -344,6 +329,8 @@ img{
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
 }
 .k2{
 	float: left;
@@ -371,6 +358,9 @@ img{
 	height: 300px;
 	font-weight: 200;
 	line-height: 30px;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
 }
 .more1{
 	display: block;

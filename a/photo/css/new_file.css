@@ -19,20 +19,21 @@
 	background-image:url(../img/denys-nevozhai-191635 拷贝.png) ;
 }
 .nv {
-	height: 580px;
-	width: 60.89%;
+	height:630px;
+	width: 68.89%;
 
 	float: right;
 	padding: 0;
 	position: relative;
 }
 .nv img{
-	height: 588px;
-	width: 100%;
+	height:700px;
+	width: 120%;
 }
-.page1,.page2,.page3,.page4{
+.page1,.page2,.page3,.page4,.page5{
 	width:100%;
-	height:650px;
+	height:750px;
+	overflow: hidden;
 }
 .page1{
 	background: yellow;
@@ -45,9 +46,13 @@
 }
 .page4{
 	background: yellow;
+	
 }
-
-.text{
+.page5{
+	/*background: darkcyan;*/
+	overflow: hidden;
+}
+.text1{
 	float: left;
 	height: 500px;
 	width:100% ;
@@ -57,13 +62,18 @@
 		margin-left:100px ;
 }
 .kou img{
-	height: 100px;
-	width: 400px;
-
+	height: 90px;
+	width: 380px;
+	margin: 10px;
+	position: relative;
+	left: 50px;
+	top: -30px;
 }
 .page {
 	width: 100%;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -88,14 +98,285 @@
 	border-radius: 50%;
 	margin-bottom: 20px;
 	cursor: pointer;
+	clear：both；
 }
 
 #tags li.active {
 	background-color: green;
 }
 .reping{
-	float: left;
-	height: 600px;
+	/*float: left;*/
+	height: 100%;
 	width: 34.7%;
+	background: red;	float: left;
+	clear：both；
+}
+.wusire{
+	position: relative;
+	/*top:-400px;*/
+	padding: 40px;
+	height: 100px;
+	width: 100%;
+
+}
+.reping li{
+	line-height: 50px;
+	color: white;
+	/*top:-300px;*/
+	padding-left: 100px;
+	position: relative;
+	clear：both；
+}
+.text2{
+	height: 100%;
+	width: 65%;
+	position: relative;
+	float: right;
+	
+	clear：both；
+}
+.title{
+	line-height: 40px;
+	margin-left: 100px;
+	margin-top:25px ;
+}
+.content{
+	margin-left:150px ;
+	width: 80%;
+}
+.box1{
+	width: 25%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background: lavenderblush;
+}
+.sy{
+	padding: 120px;
+	position: relative;
+	
+}
+.video{
+	position: absolute;
+	z-index: 100;
+	
+	margin:8% 27%;
+	margin-left: 23%;
+	margin-right:38% ;
+	left: -80px;
+	
+}
+.video img{
+	width:140%;
+	height: 160%;
+}
+.box2{
+	width: 49%;
+	height: 100%;
+	position: relative;
+	float: left;
 	background: red;
+}
+.play{
+	position: absolute;
+	z-index: 101;
+	margin: 50% 50%;
+}
+.box3{
+	width: 26%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background: saddlebrown;
+}
+.box3 img{
+	position: absolute;
+	z-index: 2;
+}
+.lao{
+	position: relative;
+	z-index: 3;
+	left: -98px;
+	margin: 50px;
+	background: forestgreen;
+	
+}
+.lao img{
+	width: 150%;
+}
+.wei{
+	position: relative;
+	margin: 30px;
+	top: 34px;
+	left: 30px;
+}
+.wei img{
+	width: 60%;
+}
+.gu{
+	position: relative;
+	top: 67px;
+	left: 98px;
+	
+}
+.gu  img{
+	width:70% ;
+}
+.wei2{
+	position: relative;
+	margin: 60px;
+	top: 118px;
+	left: 33px;width: 70%;
+	
+}
+.wei2 img{
+	width: 80%;
+	
+}
+.hope{
+	
+	position: relative;
+	margin: 30px;
+	top: 148px;
+	left: 38px;
+}
+.hope img{
+	width: 78%;
+}
+.gu2{
+	position: relative;
+		top:259px;
+		left: 150px;
+	
+}
+.zhi{
+	position: relative;
+	top: 320px;
+	left: 82px;
+	
+}
+.zhi img{
+	height: 320px;
+	
+}
+.wei3{
+	position: relative;
+	margin: 30px;
+	top: 374px;
+	left:120px;
+}
+.wei3 img{
+width: 40%;
+}
+.shi{
+	position: relative;
+	margin: 30px;
+	top: 410px;
+	left:120px;
+	
+}
+.shi img{
+	width: 60%;
+}
+.ze{
+	position: relative;
+	top: 470px;
+	left:150px;
+}
+#xingz{
+	width: 200px;
+}
+.people{
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	padding:0 50px;
+}
+.people img{
+	width: 12%;
+	border: 6px solid lightgray;
+}
+.names{
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+margin: 0 30px;
+}
+.name{
+	width: 100px;
+	background: firebrick;
+	/*margin: 30px;*/
+	letter-spacing: 10px;
+	line-height: 30px;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+}
+.shape1{
+	position:relative;
+	top: 40px;
+	left: 85px;
+	z-index: 1;
+}
+.shape2{
+	position:relative;
+	top: -29px;
+	left: -28px;
+	
+	z-index: 1;
+}
+.creative{
+	margin: 0 auto;
+	width: 90%;
+	
+}
+.xz2{
+	position: relative;
+	z-index: 2;
+	float: right;
+	top: -200px;
+	
+}
+.xd{
+	margin: 50px;
+	margin-left: 150px;
+}
+.pts{
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	margin:0 auto ;
+	
+}
+.pt{
+	height: 212px;
+	width: 320px;
+	background: gray;
+	
+}
+.pts2{
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	margin-left:100px ;
+	margin-top:60px ;
+}
+.red{
+	position: absolute;
+	z-index:-1;
+	background: red;
+	height: 300px;
+	width: 300px;
+	padding: 0 auto;
+	left: 50%;
+}
+.red2{
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	z-index:100;
+	background:forestgreen;
+	left: 30px;
+	top: 50%;
+	
 }

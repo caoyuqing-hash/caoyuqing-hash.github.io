@@ -181,13 +181,13 @@ transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
 .wine:hover ~ .current{
   left: 30%;
 }
-.burger:hover ~ .current{
+.card:hover ~ .current{
  left: 49.5%;
 }
 .comment:hover ~ .current{  
    left: 68.8%;
 }
-.sport:hover ~ .current{
+.child:hover ~ .current{
   left: 88%;  
 }
 .earth:hover ~ .current{

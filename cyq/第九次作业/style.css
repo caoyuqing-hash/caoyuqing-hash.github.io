@@ -332,6 +332,10 @@ img{
     align-content: center;
     justify-content: space-around;
 }
+.bo{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;}
 .k2{
 	float: left;
 	position: relative;

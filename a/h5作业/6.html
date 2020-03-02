@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    @keyframes anim{
+      0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.box4 {
+    animation: anim 5s;
+}
+    .box6{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        background: url(6.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .box61{
+      height: 161px;
+    width: 77px;
+    background-color: white;
+    color: #f08778;
+    font-size: 36px;
+    text-align: center;
+    line-height: 72px;
+    background: url(61.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 279px;
+    top: 576px;
+    }
+    .box62{
+       height: 430px;
+    width: 372px;
+    background-color: white;
+    background: url(62.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 313px;
+    top: 940px;
+    }
+</style>
+</head>
+<body>
+    <div class="box6">
+        <div class="box61">2</div>
+        <div onclick="javascript:location.href='8.html' "class="box62"></div>
+    </div>
+
+</body>
+<script type="text/javascript">
+var myDate = new Date();
+myDate.getYear(); //获取当前年份(2位)
+myDate.getFullYear(); //获取完整的年份(4位,1970-????)
+myDate.getMonth(); //获取当前月份(0-11,0代表1月)
+myDate.getDate(); //获取当前日(1-31)
+myDate.getDay(); //获取当前星期X(0-6,0代表星期天)
+myDate.getTime(); //获取当前时间(从1970.1.1开始的毫秒数)
+myDate.getHours(); //获取当前小时数(0-23)
+myDate.getMinutes(); //获取当前分钟数(0-59)
+myDate.getSeconds(); //获取当前秒数(0-59)
+myDate.getMilliseconds(); //获取当前毫秒数(0-999)
+myDate.toLocaleDateString(); //获取当前日期
+var mytime=myDate.toLocaleTimeString(); //获取当前时间
+myDate.toLocaleString( ); //获取日期与时间
+if (mytime<"20:00:00" && mytime>"04:00:00"){
+window.open("1.html");
+}
+<script>
+</html>

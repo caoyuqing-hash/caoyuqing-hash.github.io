@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body>
+		 <form action="http://47.106.68.121/user.php" method="post">
+        <div>
+           <p>账号： <input type="text" name="Username" id="Username"/></p>
+           <p>密码： <input type="text" name="Password" id="Password"/></p>
+            <input type="button" value="Submit" onclick="login()" />
+ 
+        </div>
+    </form>
+    <script>
+function login(){
+        var Username = $("#Username").val();  //获取输入的用户名
+        var Password = $("#Password").val();   //获取输入的密码
+        
+        if (Username=="") {              //如果没有数据，就return掉
+            alert("用户名不能为空");
+            return;
+        }
+        if (Password == "") {
+            alert("密码不能为空");
+            return;
+        }
+ 
+ 
+        $.ajax({       
+            type: "POST",
+            url: "http://47.106.68.121/user.php",
+            data: { Username: Username, Password: Password 
+            
+            },
+             dataType:"json",
+            success: function (data) {    
+            	
+
+        if(data.code==0)
+        {
+        	var json="姓名:"+data.data.name+'\n'+"年龄:"+data.data.age+'\n'+
+            	"性别:"+data.data.sex+'\n'+"电话:"+data.data.other.phone+'\n'+
+            	"地址:"+data.data.other.address+'\n';
+        	alert(json);
+		
+        };
+		
+		if(data.code==1)
+		alert(data.msg);
+		if(data.code==2)
+		alert(data.msg);
+		if(data.code==3)
+		alert(data.msg);
+                }
+       
+        });
+    }
+</script>
+	</body>
+</html>

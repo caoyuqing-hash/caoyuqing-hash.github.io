@@ -1,0 +1,109 @@
+@font-face {
+font-family:小精灵W;
+src: url("汉仪铸字小精灵W.ttf");
+}
+.button{
+	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-left: 70px;
+	position: relative;
+}
+.name{
+	width: 30%;
+	left: 10%;
+	float: left;
+	position: relative;
+	clear: both;
+}
+
+.kuang{
+	width: 55%;
+	margin-top: 2rem;
+	margin-left: 3rem;
+	position: relative;
+	float: left;
+	border-radius: 20px;
+	height: 50px;
+	border-style: solid;
+	border-color: #F3C776;
+	outline: none;
+}
+
+li{
+	position: relative;
+	float: left;
+	width:3rem;
+	height:3rem;
+	border-radius: 100%;
+	background:white;
+	left: 40px;
+	font-size: 45px;
+	margin:1rem;
+	text-align: center;
+	font-family: "小精灵W";
+}
+button{
+	background: #CB5941;
+	color: white;
+	font-family:小精灵W;
+	text-align: center;
+	width: 40%;
+	position: relative;
+	margin: 2rem 30%;
+	height: 4rem;
+	border-radius: 2rem;
+	border-color:#AC4936;
+	font-size: 2rem;
+	outline: none;
+	
+}
+.my{
+	font-family: 小精灵W;
+	font-size: 3rem;
+	position: relative;
+	/*left: 20%;*/
+	clear: both;
+	margin: 4rem;
+}
+.my1{
+	font-family: 小精灵W;
+	font-size: 2.5rem;
+	position: relative;
+	/*left: 10%;*/
+	width: 100%;
+	clear: both;
+	
+}
+.action:hover {
+	background:#F3C776;
+}
+.info{
+	width: 15%;
+	/*left: 3%;*/
+	float: left;
+	position: relative;
+	clear: both;
+	margin: 5% 0;
+}
+.bq{
+	font-size: 1rem;
+	
+	top: 1rem;
+	line-height: 2rem;
+	position: relative;
+	width: 3rem;
+	height: 2rem;
+	border-radius: 50%;
+	float: left;
+	margin:0.3rem;
+	text-align: center;
+	background: white;
+}
+.bqs{
+	width: 80%;
+	margin-left: 7rem;
+}
+.bq:hover{
+	color: orange;
+	background: #FFF389;
+}

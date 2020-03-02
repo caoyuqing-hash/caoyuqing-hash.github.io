@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body>
+		<form action="http://47.106.68.121/register.php" method="post">
+  <p>账号: <input type="text" id="Username" /></p>
+  <p>密码: <input type="text" id="Password" /></p>
+  <p>姓名: <input type="text" id="name" /></p>
+  <p>年龄: <input type="text" id="age" /></p>
+  <p>性别: <input type="text" id="sex" /></p>
+  <p>电话: <input type="text" id="phone" /></p>
+  <p>地址: <input type="text" id="address" /></p>
+  
+  <input type="button" value="Submit" onclick="register()" />
+</form>
+
+
+
+<script>
+	function register() {
+    var Username = document.getElementById("Username").value;
+    var Password = document.getElementById("Password").value;
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    var sex = document.getElementById("sex").value;
+    var phone = document.getElementById("phone").value;
+    var address = document.getElementById("address").value;
+    if(Username==""){
+        alert("请输入用户名！");
+        return;
+    }
+    $.ajax({
+        url:"http://47.106.68.121/register.php",//这里是你接口的路径，记住http://不要忘记,localhost是你本地的地址，如果要请求别人的请将别人的ip地址替换，后面的addInfoPerson是接口名字。
+        type:"POST",//请求方式是get还是post,我这里用的是post
+//      contentType:"application/json",
+        data:{'Username':Username,//这里面定义的变量名要跟数据库里面的字段相同
+        'Password':Password,
+        'name':name,
+        'age':age,
+        'sex':sex,
+        'phone':phone,
+        'address':address//传递的参数
+      },
+        dataType:"json",
+        success:function(data){ //成功返回的回调函数
+//          alert("注册成功");
+		if(data.code==0)
+		alert(data.msg);
+		if(data.code==1)
+		alert(data.msg);
+		if(data.code==2)
+		alert(data.msg);
+		if(data.code==3)
+		alert(data.msg);
+		if(data.code==4)
+		alert(data.msg);
+		
+        }
+     });
+     
+}
+</script>
+	</body>
+</html>

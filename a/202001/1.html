@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/1.css" />
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<title></title>
+		
+	</head>
+	<body background="photo/背景.png"> 
+	<div class="button"><img src="photo/button-关闭.png"></div>
+		<div><div class="name"><img src="photo/icon-姓名.png"></div><form action=""  onSubmit="return inputNull(this)">
+		<div class="input"><input class="kuang" id="name"/></div></div>	
+		<div class="p" style="width=100%;color: red;float: left;margin-left: 2rem;"><p>名字长度不要超过十个字哦！</p></div>
+		<div class="name"><img src="photo/icon-性别.png"></div>
+		<div style="height: 100px;width: 100%;"><ul id="hear" style="list-style-type: none;">
+<li class="action"><div  <!--style="background: #F3C776;-->">男</div></li>
+<li><div >女<br></div></li>
+<li><div >密<br></div></li></ul></div>
+<div class="name"><img src="photo/QQ.png"></div>
+		<div class="input"><input class="kuang" id="QQ"/></div>
+<div class="name"><img src="photo/icon-电话.png"></div>
+		<div class="input"><input class="kuang" id="tel" type="tel"/></div>
+		<div class="p" style="width=100%;color: red;float: left;margin-left: 3rem;"><p>请输入有效号码！</p></div>
+		<div class=""><img src="photo/插画.png" style="width: 100%;"></div>
+<div style="margin: 0 auto;clear: both;"><button>点击报名</button></div> 	</form>
+</body>
+<script>
+$(function(){
+	 $("#hear li").click(function(){
+                $(this).css({
+                    backgroudcolor: "#F3C776",
+                   
+                }).siblings().css({
+                    backgroudcolor: "white",
+                });
+            });          
+           
+            $("#hear li").click(function(){
+                $(this).addClass("action").siblings().removeClass("action");
+         });
+        });
+//	if(document.getElementById('title').value=='' && document.getElementById('title2').value==''){
+//		alert('名称不能为空');
+//		return false;
+		
+		 $('input[data-type=tel]').blur(function(){
+            var value = $(this).val();
+            var reg = /^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}/;
+            var result = reg.test(value);
+            if(!result){
+               alert('电话号码格式有误');
+
+                $(this).focus();
+            }
+        });
+
+
+function inputNull(form){
+			for(i=0;i<3;i++){
+                    //form属性的elements的首字母e要小写
+				if(form.elements[i].value == ""){ 
+					alert( form.elements[i].id + "不能为空");
+					form.elements[i].focus();	
+//					return false;
+				}
+				}
+			if(form.elements[0].value !== ""&&form.elements[0].value !== ""&&form.elements[1].value !== ""&&form.elements[2].value !== "")
+				button.style.backgroundColor="#FFFAE8";alert( "报名成功");
+		
+}
+	  	
+
+    
+
+
+
+</script>
+</html>

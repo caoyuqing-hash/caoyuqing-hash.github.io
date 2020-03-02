@@ -1,0 +1,194 @@
+@font-face {
+font-family:字心坊鸿潮榜书;
+src: url("font/1ZIXINFANGHONGCHAOBANGSHU-2.TTF");
+}
+.pt4{
+	float:left;
+	width: 50%;
+	height: 600px;
+	background: url(photo/brigitte-tohm-EAay7Aj4jbc-unsplash.jpg);
+	background-size:cover;
+	cursor:hand;
+	z-index:0;
+	position: relative;
+}
+.pt3{
+	float:right;
+	width: 50%;
+	height: 600px;
+	background: url(photo/miti-DFtvglCPWjY-unsplash.jpg);
+	background-size:cover;
+	z-index: 0;
+	position: relative;
+}
+.xpt{
+	height: 0px;
+	top: -410px;
+	left: -140px;
+	position: relative;
+	z-index: 2;
+	background: green;
+}
+.class1{
+	width: 50%;
+	height: 600px;
+	background:white;
+	z-index: 1;
+	position: relative;
+	margin: 0 auto;
+}
+.xpt1{
+	left: 30px;
+	top: 20px;
+	width: 33%;
+	height:200px;
+	cursor: pointer;
+	background: url(photo/szymon12455-2-yFglFkRpo-unsplash.jpg);
+	background-size:cover;
+	z-index:3;
+	position: relative;
+}
+.xpt11{
+	left: 40px;
+	top: -170px;
+	width: 33%;
+	height:200px;
+	cursor: pointer;
+	background: #D1C0A5;
+	z-index:2;
+	position: relative;
+}
+.xpt111{
+	left: 180px;
+	top: -1460px;
+	margin: 1px;
+	width: 5%;
+	height:60px;
+	font-family:字心坊鸿潮榜书;
+	font-size: 1.3em;
+	line-height: 30px;
+	background: #D1C0A5;
+	color: white;
+	text-align: center;
+	z-index:10;
+	cursor: pointer;
+	position: relative;
+}
+.xpt222{
+	left: 390px;
+	top: -1520px;
+	margin: 1px;
+	width: 5%;
+	height:60px;
+	font-family:字心坊鸿潮榜书;
+	font-size: 1.3em;
+	line-height: 30px;
+	background: #D1C0A5;
+	color: white;
+	text-align: center;
+	z-index:10;
+	cursor: pointer;
+	position: relative;
+}
+.xpt333{
+	left: 390px;
+	top: -1340px;
+	margin: 1px;
+	width: 5%;
+	height:60px;
+	font-family:字心坊鸿潮榜书;
+	font-size: 1.3em;
+	line-height: 30px;
+	background: #D1C0A5;
+	color: white;
+	text-align: center;
+	z-index:10;
+	cursor: pointer;
+	position: relative;
+}
+.xpt444{
+	left: 180px;
+	top: -1400px;
+	margin: 1px;
+	width: 5%;
+	height:60px;
+	font-family:字心坊鸿潮榜书;
+	font-size: 1.3em;
+	line-height: 30px;
+	background: #D1C0A5;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	z-index:10;
+	position: relative;
+}
+.xpt2{
+	left: 30px;
+	top: -30px;
+	width: 33%;
+	height: 200px;
+	cursor: pointer;
+	background: url(photo/alex-loup-2zDw14yCYqk-unsplash.jpg);
+	background-size:cover;
+	z-index: 3;
+	position: relative;
+}
+.xpt22{
+	left: 40px;
+	top: -220px;
+	width: 33%;
+	height:200px;
+	background: #D1C0A5;
+	z-index:2;
+	cursor: pointer;
+	
+	position: relative;
+}
+.xpt3{
+	left: 370px;
+	top: -780px;
+	width: 33%;
+	height: 200px;
+	cursor: pointer;
+	background: url(photo/thought-catalog-OJZB0VUQKKc-unsplash.jpg);
+	background-size:cover;
+	z-index: 3;
+	position: relative;
+}
+.xpt33{
+	left: 380px;
+	top: -970px;
+	width: 33%;
+	height:200px;
+	background: #D1C0A5;
+	z-index:2;
+	cursor: pointer;
+	
+	position: relative;
+}
+.xpt4{
+	left: 370px;
+	top: -830px;
+	width: 33%;
+	height: 200px;
+	cursor: pointer;
+	background: url(photo/lisa-hobbs-mRaNok_Ld6s-unsplash.jpg);
+	background-size:cover;
+	z-index: 3;
+	position: relative;
+}
+.xpt44{
+	left: 380px;
+	top: -1020px;
+	width: 33%;
+	height:200px;
+	background: #D1C0A5;
+	z-index:2;
+	cursor: pointer;
+	position: relative;
+}
+/*.circle{
+	width: 200px;
+	height: 200px;
+	background: sandybrown;
+}*/
